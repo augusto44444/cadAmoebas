@@ -8,7 +8,7 @@ if(process.env.JAWSDB_URL){
     connection.connect(function(err){
         if(err) throw err;
         server.get('/', function(req, res) {
-            connection.query('SELECT * FROM usuario', function(err, data) {
+            connection.query('SELECT * FROM amoeba', function(err, data) {
                 if(err) throw err;
                 res.json(data);
             })
