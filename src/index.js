@@ -15,7 +15,7 @@ connection.connect(function (err) {
         })
     })
 
-    server.use('/api', router(connection))
+    server.post('/api', router(connection))
 })
 
 
